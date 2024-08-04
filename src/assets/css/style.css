@@ -1,34 +1,55 @@
 .mainBackground {
-    background-color:rgb(31, 29, 61);
-    
+  background-color: rgb(31, 29, 61);
 }
 
-.mainText{
-    color:rgb(212, 88, 47);
-    text-align: center;
+.mainText {
+  color: rgb(212, 88, 47);
+  text-align: center;
 }
 
 .poem {
-    font-size: 18px;
-    font-style: oblique;
+  font-size: 18px;
+  /* font-style: oblique; */
 }
 
 p {
-    color:rgb(255, 149, 50);
+  color: rgb(255, 149, 50);
 }
 
 .kittyPic {
-    width:200px;
-    height:200px;
+  width: 200px;
+  height: 200px;
 }
 
 .row {
-    display: flex;
-    justify-content: center;
-    column-gap: 10px;
+  display: flex;
+  justify-content: center;
+  column-gap: 10px;
 }
 
-.imgColumn{
-    flex: 30%;
-    padding : 10px;
+.imgColumn {
+  flex: 30%;
+  padding: 10px;
 }
+
+.mainCenterBox {
+  max-width: 56rem;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Fonts */
+.playfair-display-font {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.playfair-display-italic {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: italic;
+  }
