@@ -7,6 +7,10 @@
   text-align: center;
 }
 
+.mainPageLink {
+    color: rgb(212, 88, 47)
+}
+
 .poem {
   font-size: 18px;
   /* font-style: oblique; */
@@ -38,6 +42,14 @@ p {
   margin-left: auto;
   margin-right: auto;
 }
+
+
+/* Carter Page */
+.carterMainText {
+    color:rgb(255, 165, 180);
+    text-align: center;
+}
+
 
 /* Fonts */
 .playfair-display-font {
