@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Blog Page</title>
+    <link rel="stylesheet" href="/assets/css/style.css" />
+  </head>
+  <body class="mainBackground">
+    <div class="blogMainPage">
+      <div class="blogCenter">
+        <ul>
+          {%- for post in collections.post -%}
+          
+          <li><a href="{{post.url}}" class="mainBlogLink">{{ post.data.title}}</a> - {{post.data.date.toUTCString().substring(0, 16)}}</li>
+          {%- endfor -%}
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

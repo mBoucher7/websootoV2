@@ -50,6 +50,22 @@ p {
     text-align: center;
 }
 
+/* Blog Main */
+.blogMainPage{
+  color:goldenrod;
+}
+
+.blogCenter{
+  max-width: 40rem;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 20px;
+}
+
+.mainBlogLink:visited{
+  color: rgb(218, 91, 45)
+}
 
 /* Fonts */
 .playfair-display-font {
