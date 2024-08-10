@@ -63,6 +63,41 @@ p {
   font-size: 20px;
 }
 
+.mainBlogLink {
+  color:goldenrod;
+  flex-basis: calc(100% - 1.5rem);
+  padding-left: .25em;
+  padding-right: .5em;
+}
+
+.mainBlogList {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  counter-increment: start-from -1;
+  margin-bottom: 0.5em;
+}
+
+.mainBlogList:before {
+	display: inline-block;
+	pointer-events: none;
+	content: "" counter(start-from, decimal-leading-zero) ". ";
+	line-height: 100%;
+	text-align: right;
+	margin-left: -1.5rem;
+}
+
+.mainBlogLinkDate {
+  font-size: 15px;
+}
+
+ol {
+  list-style: none;
+  padding: 0;
+  padding-left: 1.5rem;
+  counter-reset: start-from 5;
+}
+
 .mainBlogLink:visited{
   color: rgb(218, 91, 45)
 }
