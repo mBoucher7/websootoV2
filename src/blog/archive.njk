@@ -5,7 +5,8 @@ pagination:
   alias: posts <!-- alias???-->
   reverse: true
 ---
-<h1> piss</h1>
+
+<h1>piss</h1>
 <h2>Post Archive</h2>
 
 {%- for post in posts -%}
@@ -15,10 +16,10 @@ pagination:
 {%- endfor -%}
 
 <!-- Used to go to "next pages" -->
-<p>
+<!-- <p>
   {% if pagination.href.previous %}
   <a href=" {{ pagination.href.previous }}">Previous</a>
   {% else %} Previous {% endif %} / {% if pagination.href.next %}
   <a href=" {{ pagination.href.next }}">Next</a>
   {% else %} Next {% endif %}
-</p>
+</p> -->
