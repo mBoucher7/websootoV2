@@ -1,0 +1,36 @@
+---
+pagination:
+    data: collections.post
+    size: 4
+    alias: posts
+    reverse: true
+---
+
+<h2>Post Archive</h2>
+
+{% for post in posts %}
+<p>
+    <a href="{{post.url}}"> {{post.data.title}}</a> - {{post.date}}
+    <br> <!-- Line Break -->
+{% excerpt post %}
+</p>
+{% endfor %}
+
+<p>
+    <!-- Next page button for the archive if there is a next page -->
+    {% if pagination.href.previous %}
+    <a href="{{pagination.href.previous}}">Previous</a>
+    {% else %}
+    <!-- If there is no previous page, just display the text w/o link -->
+    Previous
+    {% endif %}
+/ <!-- Adds a slash between the previous and next page buttons -->
+
+<!-- Previous page button for the archive if there is a previous page -->
+{% if pagination.href.next %}
+<a href="{{pagination.href.next}}">Next</a>
+{% else %}
+<!-- If there is no next page, just display the text w/o link -->
+Next
+{% endif %}
+</p>    
