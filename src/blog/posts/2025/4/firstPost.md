@@ -5,6 +5,7 @@ categories:
     - coom
     - cum
 tags: post
+layout: blog
 ---
 
 Random Yada yada

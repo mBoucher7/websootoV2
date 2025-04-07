@@ -1,0 +1,61 @@
+---
+title: Mitchypoo's blog
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <style>
+      body {
+        background-color: #7A288A; /* Deep Purple */
+        color: #F7DC6F; /* Bright Yellow */
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 2rem;
+      }
+
+      /* Basic typography */
+      h1, h2, h3, h4, h5, h6 {
+        color: #FFC67D; /* Warm Orange */
+        margin-bottom: 0.5rem;
+      }
+
+      a {
+        color: #8BC34A; /* Light Green */
+        text-decoration: none;
+        border-bottom: 1px solid #8BC34A;
+      }
+
+      a:hover {
+        color: #C6E2B5; /* Pale Green */
+        border-bottom: 1px solid #C6E2B5;
+      }
+
+      /* Code blocks and inline code */
+      pre, code {
+        background-color: #5C0011; /* Dark Burgundy */
+        color: #F7DC6F; /* Bright Yellow */
+        padding: 0.2rem 0.4rem;
+        border-radius: 0.2rem;
+      }
+
+      pre {
+        padding: 1rem;
+        overflow-x: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- TODO: Nav -->
+    <div>
+      <a href="/blog">:D</a>
+    </div>
+    <div class="prose">
+      {{ content | safe }}
+    </div>
+  </body>
+</html>

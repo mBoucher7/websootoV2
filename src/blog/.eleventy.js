@@ -1,15 +1,13 @@
-module.exports = function(eleventyConfig) {
-
+export default function(eleventyConfig) {
     eleventyConfig.addShortcode('excerpt', extractExcerpt);
 
     // This function extracts (returns) the first paragraph from the content
     function extractExcerpt(post) {
         console.log("extrapolate");
         // If no content, return nothing
-        if(!post.templateContent) return '';
+        if (!post.templateContent) return '';
         // if is some paragraph of content, return it as excerpt
-        if(post.templateContext.indexOf('<p>') > 0)
-        {
+        if (post.templateContext.indexOf('<p>') > 0) {
             let end = post.templateContent.indexOf('</p>');
             return post.templateContent.substring(0, end + 4);
         }
@@ -37,7 +35,7 @@ module.exports = function(eleventyConfig) {
     });
     console.log("postcollection");
 
-    
+
 
     // This function filters posts by a specific category/tag
     eleventyConfig.addFilter("filterByCategory", function(posts, cat) {
@@ -55,7 +53,7 @@ module.exports = function(eleventyConfig) {
 
     return {
         dir: {
-            input: 'src/blog'
-        }
+            input: 'src/blog',
+        },
     }
 };
