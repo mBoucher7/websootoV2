@@ -1,7 +1,8 @@
 ---
+layout: blog
 pagination:
     data: collections.post
-    size: 4
+    size: 2
     alias: posts
     reverse: true
 ---
@@ -10,7 +11,7 @@ pagination:
 
 {% for post in posts %}
 <p>
-    <a href="{{post.url}}"> {{post.data.title}}</a> - {{post.date}}
+    <a href="{{post.url}}"> {{post.data.title}}</a> - {{ post.date | readableDate }}
     <br> <!-- Line Break -->
 {% excerpt post %}
 </p>

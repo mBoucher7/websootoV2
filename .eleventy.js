@@ -1,3 +1,9 @@
+const { format } = require("date-fns");
+
+/**
+ * Blog Functions
+ */
+
 function extractExcerpt(post) {
   if (!post.templateContent) return '';
   if (post.templateContent.indexOf('</p>') > 0) {
@@ -46,7 +52,14 @@ module.exports = function(eleventyConfig) {
     return result;
   });
 
+  eleventyConfig.addFilter("readableDate", (dateObj) => {
+    return format(dateObj, "MMM dd, yyyy"); // e.g., Apr 03, 2025
+  });
 
+
+
+
+  // Final function? (upload stuff ig)
   return {
     dir: {
       input: "src",
