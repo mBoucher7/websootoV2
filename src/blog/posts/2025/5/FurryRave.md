@@ -43,4 +43,4 @@ I'm honestly glad that this was the first rave that I had gone to and I'm so tha
 
 #### Rose: All the outfits, omg people looked so amazing and I wish I could've met everyone that stepped inside!
 #### Thorn: The bartender that told me they don't have any free water, and had actually been lying.
-#### Bud: Literally all the raves!>!>!
+#### Bud: Literally all the raves!>!>! 
