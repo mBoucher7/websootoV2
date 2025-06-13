@@ -10,20 +10,44 @@ title: Mitchypoo's blog
     <title>{{ title }}</title>
     <style>
       body {
-        background-color: #2c2c2c; /* Deep Purple */
+        background-color: #2c2c2c; /* dark gray */
         color: #F7DC6F; /* Bright Yellow */
         font-family: Arial, sans-serif;
         line-height: 1.6;
         margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start; /* Align items to the top */
         padding: 2rem;
+        gap: 20px
       }
       
       .prose {
         max-width: 800px;
-        margin: 0 auto;
+        {# margin: 0 auto; #}
         padding: 1rem;
         background-color: #3A3A3A; /* Dark Gray */
         border-radius: 0.5rem;
+      }
+
+      .sidenav{
+        width: 130px;
+        flex-shrink: 0;
+        top: 0;
+        position: sticky;
+        overflow-x: hidden;
+        padding: 8px 0;      
+      }
+
+      .sidenav a {
+        display: block;
+        padding: 8px 0;
+      }
+
+      .sidenav img {
+        width: 100%;
+        margin-bottom: 10px;
+        border-radius: 5px;
       }
       
       /* Basic typography */
@@ -59,8 +83,11 @@ title: Mitchypoo's blog
   </head>
   <body>
     <!-- TODO: Nav -->
-    <div>
-      <a href="/blog">:D</a>
+    <div class="sidenav">
+      <a href="/blog">Blog Home</a>
+      <a href="/blog/archive">Archive</a>
+      <a href="/blog/about">About</a>
+      <img src="/assets/images/bearFaceRub.gif" alt="Bears smushing faces">
     </div>
     <div class="prose">
       {{ content | safe }}
