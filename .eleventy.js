@@ -6,9 +6,10 @@ const { format } = require("date-fns");
 
 function extractExcerpt(post) {
   if (!post.templateContent) return '';
-  if (post.templateContent.indexOf('</p>') > 0) {
+  if (post.templateContent.indexOf('</p>') > 0 && post.templateContent.indexOf('<p>') > 0) {
     let end = post.templateContent.indexOf('</p>');
-    return post.templateContent.substr(0, end + 4);
+    let strt = post.templateContent.indexOf('<p>');
+    return post.templateContent.substr(strt, end + 4 - strt);
   }
   return post.templateContent;
 }
