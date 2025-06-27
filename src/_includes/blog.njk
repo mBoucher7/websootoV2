@@ -1,5 +1,5 @@
 ---
-title: Mitchypoo's blog
+title: Wyze blog
 ---
 
 <!doctype html>
@@ -30,6 +30,21 @@ title: Mitchypoo's blog
         border-radius: 0.5rem;
       }
 
+      .prose img:not(.img-row img) {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100%;
+        height: auto;
+      }
+
+      .img-row{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap; /* Allow images to wrap to the next line */
+        gap: 10px; /* Space between images */
+      }
+
       .sidenav{
         width: 130px;
         flex-shrink: 0;
@@ -48,6 +63,51 @@ title: Mitchypoo's blog
         width: 100%;
         margin-bottom: 10px;
         border-radius: 5px;
+      }
+
+      /* Mobile responsiveness */
+      @media (max-width: 700px) {
+      body {
+          flex-direction: column; /* Stack elements vertically */
+          align-items: center; /* Center items */
+          padding: 0;
+        }
+        
+        .sidenav {
+          position: relative;
+          top: 0;
+          left: 0;
+          width: 100vw;
+          height: 60px;
+          background: #2c2c2c;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-around;
+          z-index: 1000;
+          padding: 0;
+        }
+
+        .sidenav a {
+          text-align: center; /* Center links in sidenav */
+        }
+        .sidenav img {
+          display: none; /* Hide image on small screens */
+        }
+        
+        .prose {
+          max-width: 100%; /* Allow prose to take full width */
+        }
+        
+        .prose img,
+        .img-row {
+          max-width: 100%; /* Ensure images are responsive */
+          height:auto; /* Maintain aspect ratio */
+          margin: 0.5rem 0;
+          flex-direction: column; /* Stack images vertically */
+          gap: 8px; /* Space between images */
+          align-items: center; /* Center images */
+        }
       }
       
       /* Basic typography */
@@ -84,6 +144,7 @@ title: Mitchypoo's blog
   <body>
     <!-- TODO: Nav -->
     <div class="sidenav">
+      <a href="/">Home</a>
       <a href="/blog">Blog Home</a>
       <a href="/blog/archive">Archive</a>
       <a href="/blog/about">About</a>

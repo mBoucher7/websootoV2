@@ -50,6 +50,16 @@ p {
     text-align: center;
 }
 
+/* Dylan Page */
+.dylanBackgroundImg {
+  background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fpreviews%2F016%2F058%2F891%2Foriginal%2Flgbt-christmas-tree-with-rainbow-and-gay-symbols-flat-illustration-set-merry-homosexual-xmas-and-happy-new-year-concept-elements-for-pride-cards-posters-patterns-gifts-vector.jpg&f=1&nofb=1&ipt=9e819233913fd38ae7e5fcb38949a6a75ce975cbb3b3bc79bb230b93e4f99d21");
+  /* background-size: cover; */
+  background-size: 50% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+
 /* Blog Main */
 .blogMainPage{
   color:goldenrod;

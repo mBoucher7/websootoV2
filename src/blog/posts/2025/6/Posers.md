@@ -22,7 +22,7 @@ Any post with someone doing anything with a skateboard is full of comments askin
 
 Watching SLC punk, there's a running joke throughout the film about the disdain for posers, while they plaster slander posters of Reagan everywhere and yet never bring up what they didn’t like about his policies. The hatred for Reagan is very common in liberal or punk communities and tends to be a general staple. I tend to consider myself punk in my views and have had my fair share of hating on the U.S. 40th president, yet I genuinely don’t know much of his presidency. I know about his “Reaganomics” and War on Drugs, but most of the hatred for his policies goes over my head. I think that in every community where you have “posers”, you are one of them.
 
-<div style="display: flex; gap: 10px;">
+<div class="img-row">
   <img src="/assets/images/SLCPunkPoster.jpg" alt="SLC Punk Poster" height="400" />
   <img src="/assets/images/reaganPoster.jpg" alt="Reagan Poster" height="400" />
 </div>

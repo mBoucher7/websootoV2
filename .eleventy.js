@@ -9,7 +9,8 @@ function extractExcerpt(post) {
   if (post.templateContent.indexOf('</p>') > 0 && post.templateContent.indexOf('<p>') > 0) {
     let end = post.templateContent.indexOf('</p>');
     let strt = post.templateContent.indexOf('<p>');
-    return post.templateContent.substr(strt, end + 4 - strt);
+    if (end - strt > 160) end = 160 + strt; // if first paragraph is longer than 160 char, use a default length of 160 <-- TODO: change to include only full words
+    return post.templateContent.substr(strt, end + 4 - strt) + '...';
   }
   return post.templateContent;
 }

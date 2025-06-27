@@ -24,7 +24,7 @@ The outfit was inspired by a raccoon (or trash panda, or fur bandits), which I t
 
 I went thrifting with my friend and we got lots of different clothes, but most importantly I got some black slacks I could cut into shorts and a band-T that I wanted to use. The mask took only about an hour or two to fully paint, and I was very happy with how it had come out! I definitely should have taken more photos before the rave of the full fit but I had forgot :3, so I can only show this photo that shows off most of it!
 
-<div style="display: flex; gap: 10px;">
+<div class="img-row">
   <img src="/assets/images/rigbyArt.jpg" alt="Rigby Art" height="400" />
   <img src="/assets/images/soloFurryRaveFit.jpg" alt="Solo Rave Fit" height="400" />
 </div>
