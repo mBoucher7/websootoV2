@@ -6,7 +6,7 @@ categories:
     - happy
 tags: post
 layout: blog
-excerpt: Its not about falling down, it's about giving up. I'd know, I fell... a lot.
+excerpt: Its not about falling down, it's about getting up. I'd know, I fell... a lot.
 ---
 # Through the Thickness
 
