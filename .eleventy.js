@@ -5,20 +5,31 @@ const { format } = require("date-fns");
  */
 
 function extractExcerpt(post) {
-  if (!post.templateContent) return '';
-  if (post.templateContent.indexOf('</p>') > 0 && post.templateContent.indexOf('<p>') > 0) {
-    let end = post.templateContent.indexOf('</p>');
-    let strt = post.templateContent.indexOf('<p>');
-    if (end - strt > 160) end = 160 + strt; // if first paragraph is longer than 160 char, use a default length of 160 <-- TODO: change to include only full words
-    return post.templateContent.substr(strt, end + 4 - strt) + '...';
+  let content = post.content || '';
+
+  content = content.replace(/<[^>]+>/g, ''); // Remove HTML tags
+
+  if (content.length > 160) {
+    return content.substring(0, 160) + '...'; // Truncate to 160 characters and add ellipsis
   }
-  return post.templateContent;
+  return content;
 }
+
+// eleventyConfig.addFilter("excerpt", function(post) {
+//   if (!post.templateContent) return '';
+
+//   let text = post.templateContent.replace(/<[^>]+>/g, ''); // Remove HTML tags
+
+//   if (text.length > 160) {
+//     return text.substring(0, 160) + '...'; // Truncate to 160 characters and add ellipsis
+//   }
+//   return text;
+// });
+
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/assets");
-  eleventyConfig.addShortcode('excerpt', post => extractExcerpt(post));
-
+  eleventyConfig.addFilter("excerpt", extractExcerpt);
   // This function returns a collection of unique categories from all posts
   console.log("precollection");
   eleventyConfig.addCollection("categories", function(collectionAPI) {
@@ -29,7 +40,7 @@ module.exports = function(eleventyConfig) {
     let posts = collectionAPI.getFilteredByTag('post');
     // Iterate through each post and extract categories
     posts.forEach(p => {
-      let cats = p.data.categories;
+      let cats = p.data.categories || [];
       //Add each category to the Set
       cats.forEach(c => categories.add(c));
     });

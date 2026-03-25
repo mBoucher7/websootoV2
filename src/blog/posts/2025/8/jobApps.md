@@ -6,6 +6,7 @@ categories:
     - Life
 tags: post
 layout: blog
+excerpt: Applications are like hell... or at least purgatory I guess.
 ---
 # My Shitty Apps
 

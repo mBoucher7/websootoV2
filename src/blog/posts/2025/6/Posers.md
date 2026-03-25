@@ -7,6 +7,7 @@ categories:
     - Punk
 tags: post
 layout: blog
+excerpt: Poser is a fake word, and if you use it; you're a poser!
 ---
 # The Rise of Posers
 

@@ -7,6 +7,7 @@ categories:
     - yapping
 tags: post
 layout: blog
+excerpt: I guess websites are actually pretty hard to make. Web-dev, I am sorry for making fun of you. Let me live in peace!
 ---
 # The birth of a blog <3
 

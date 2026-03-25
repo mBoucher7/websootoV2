@@ -7,6 +7,7 @@ categories:
     - Furry
 tags: post
 layout: blog
+excerpt: I touched a tail, it was pretty epic.
 ---
 # The Furry Rave (Rawr xD)
 
